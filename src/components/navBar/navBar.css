@@ -1,0 +1,17 @@
+.navbar{
+    width: 100%;
+    height: 10vh;
+    background-image: linear-gradient(to right, #95B5AB 0%, #5D887B 50%,#95B5AB 98%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.pageLinks{
+    margin-left: 20px;
+    display: flex;
+    gap: 20px;
+}
+.search{
+    margin-right: 20px;
+}
