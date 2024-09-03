@@ -10,8 +10,18 @@
 .pageLinks{
     margin-left: 20px;
     display: flex;
-    gap: 20px;
+    gap: 28px;
+    font-family: "Roboto";
+    font-size: 20px;
 }
 .search{
     margin-right: 20px;
+    
+}
+.inputSearch{
+    font-family: "Roboto";
+    font-size: 16px;
+    border-radius: 18px;
+    padding:5px;
+    border-style: none;
 }

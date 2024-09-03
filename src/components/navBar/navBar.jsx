@@ -12,7 +12,7 @@ export default function Navbar(){
                 <h1>Savor Street</h1>
             </div>
             <div className="search">
-                <input type="text" placeholder="Search for anything"></input>
+                <input className="inputSearch" type="text" placeholder="Search for anything"></input>
             </div>
         </div>       
         </>
