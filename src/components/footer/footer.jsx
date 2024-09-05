@@ -1,7 +1,7 @@
 export default function Footer(){
     return(
         <>
-        <div className="footer">
+        <footer className="footer">
             <div className="policy">
                 <p>Privacy Policy</p>
                 <p>Terms & Conditions</p>
@@ -13,7 +13,7 @@ export default function Footer(){
                 <p><img className= 'mediaImg1' src="src/assets/images/facebook.png"></img></p>
                 <p><img className= 'mediaImg2' src="src/assets/images/twitter.png"></img></p>
             </div>
-        </div>       
+        </footer>       
 </>
 
     )

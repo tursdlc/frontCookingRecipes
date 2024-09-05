@@ -1,0 +1,47 @@
+.mainContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 100%;
+}
+.recipeContainer{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    max-height: 300px;
+    background-color: #B8CEC7;
+    margin: 40px;
+    border-radius: 4px;
+    font-family: "roboto";
+    color: #403F3F;
+}
+.titleRecipe{
+    font-family: "yeseva one";
+    margin:5px;
+}
+.descriptionRecipe {
+    font-size: 0.8rem;
+    width: 200px;
+    text-wrap:wrap;
+    margin:5px;
+}
+.timeRecipe{
+    margin:5px;
+    font-weight: bold;
+}
+.readButton{
+    max-width: 100px;
+    min-height: 30px;
+    border-color: #ffffff;
+    border-radius: 4px;
+    font-weight: bold;
+    color: #403F3F;
+    margin:5px;
+}
+.readButton:hover{
+    cursor: pointer;
+    background-color: #5D887B;
+    border-color: #859c95;
+    color: white;
+    font-weight: bold;
+}

@@ -1,8 +1,14 @@
-
+.titlePage{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-family: "yeseva one";
+    color: #403F3F;
+}
 .main{
     display: flex;
     justify-content: center;
-    margin-top: 80px;
+    margin-top: 40px;
     margin-bottom:60px;
     font-family: "roboto";
 }
@@ -10,10 +16,11 @@
 .recipeForm{
     display:flex;
     flex-direction: column;
-    width: 500px;
+    width: 640px;
     height: 580px;
     background-color: #B8CEC7;
     border-radius: 6px;
+    padding:20px;
 }
 .recipeForm > label{
     padding-left:10px;
@@ -27,8 +34,8 @@
     
 }
 .titleInput{
-    width:300px;
-    height: 50px;
+    width:280px;
+    height: 70px;
 }
 .descriptionText{
     margin: 10px;
@@ -37,20 +44,26 @@
     font-family: "roboto";
 }
 .timeInput{
-    width:100px;
-    height: 50px;
+    width:80px;
+    height: 70px;
 }
 .buttonBox{
     display: flex;
     justify-content: center;
     margin-top:50px;
     margin-bottom: 60px;
-    
 }
 
 .formButton{
-    width:8vw;
+    width:12vw;
     height: 6vh;
     border-style: none;
     border-radius: 6px;
+    background-color: white;
+    font-size: 16px;
+    color: #403F3F;
+}
+.formButton:hover{
+    background-color: #5D887B;
+    cursor: pointer;
 }

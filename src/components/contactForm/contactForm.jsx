@@ -12,7 +12,7 @@ export default function Form(){
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post(url, {title:title, description:description});
+            const response = await axios.post(url, {title:title, description:description, time:time});
             console.log(response.data)
         } catch (error){
             console.log(error.response);
@@ -22,6 +22,8 @@ export default function Form(){
 
     return(
         <>
+
+        <div className="titlePage"><h2>Add a new recipe</h2></div>
         <div className="main">
         <form className="recipeForm" onSubmit={handleSubmit}>
             <label>

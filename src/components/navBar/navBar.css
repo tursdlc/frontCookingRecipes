@@ -12,11 +12,13 @@
     display: flex;
     gap: 28px;
     font-family: "Roboto";
-    font-size: 20px;
+    font-size: 18px;
+}
+.title{
+    font-family: "yeseva one";
 }
 .search{
     margin-right: 20px;
-    
 }
 .inputSearch{
     font-family: "Roboto";

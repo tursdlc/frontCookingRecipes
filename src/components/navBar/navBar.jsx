@@ -3,7 +3,7 @@
 export default function Navbar(){
     return(
         <>
-        <div className="navbar">
+        <nav className="navbar">
             <div className="pageLinks">
                 <p>Recipes</p>
                 <p>Add a recipe</p>
@@ -14,7 +14,7 @@ export default function Navbar(){
             <div className="search">
                 <input className="inputSearch" type="text" placeholder="Search for anything"></input>
             </div>
-        </div>       
+        </nav>       
         </>
     )
 }
