@@ -22,8 +22,6 @@ export default function Form(){
 
     return(
         <>
-
-        <div className="titlePage"><h2>Add a new recipe</h2></div>
         <div className="main">
         <form className="recipeForm" onSubmit={handleSubmit}>
             <label>

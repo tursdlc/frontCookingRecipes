@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 
 
 export default function Navbar(){
@@ -5,14 +6,14 @@ export default function Navbar(){
         <>
         <nav className="navbar">
             <div className="pageLinks">
-                <p>Recipes</p>
-                <p>Add a recipe</p>
+                <Link to={'/addrecipe'} style={{textDecoration:'none', fontSize:'16px'}}>Add a Recipe</Link>
+                <Link to={'/recipes'} style={{textDecoration:'none',fontSize:'16px'}}>Recipes</Link>
             </div>
             <div className="title">
                 <h1>Savor Street</h1>
             </div>
-            <div className="search">
-                <input className="inputSearch" type="text" placeholder="Search for anything"></input>
+            <div className="login">
+                <img className="loginIcon" src="src/assets/images/user-login.svg" alt="log in icon"/>
             </div>
         </nav>       
         </>

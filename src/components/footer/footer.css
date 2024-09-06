@@ -30,3 +30,39 @@
     width: 24px;
     height:24px;
 }
+
+@media (width < 375px){
+    .policy{
+        font-size: 10px;
+    }
+    .email{
+        font-size: 10px;
+    }
+
+    .mediaImg1{
+        width: 16px;
+        height:16px;
+    }
+    .mediaImg2{
+        width: 16px;
+        height:16px;
+    }
+    }
+
+@media (375px <= width <= 768px){
+    .policy{
+        font-size: 12px;
+    }
+    .email{
+        font-size: 12px;
+    }
+    .mediaImg1{
+        width: 18px;
+        height:18px;
+    }
+    .mediaImg2{
+        width: 18px;
+        height:18px;
+    }
+        }
+    

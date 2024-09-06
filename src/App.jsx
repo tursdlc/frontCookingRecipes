@@ -1,26 +1,36 @@
 import './App.css'
-import Navbar from "./components/navBar/navBar";
-import Footer from "./components/footer/footer";
-import Form from "./components/contactForm/contactForm"
-import RecipePage from './pages/recipePage';
-
-import './components/navBar/navBar.css';
-import './components/footer/footer.css';
-import './components/contactForm/contactForm.css'
-
-
-
-
+import { createBrowserRouter, RouterProvider} from 'react-router-dom';
+import Layout from './layout';
+import Home from './pages/home'
+import RecipePage from './pages/recipePage'
+import AddRecipe from './pages/addRecipe'
 
 
 function App() {
+  const router = createBrowserRouter([
+    {
+      element:<Layout></Layout>,
+      children:[
+        {
+          path:'/',
+          element: <Home></Home>
+        },
+        {
+          path:'/addrecipe',
+          element: <AddRecipe></AddRecipe>
+        },
+        {
+          path:'/recipes',
+          element: <RecipePage></RecipePage>
+        }
+      ]
+    }
+  ])
 
 
   return (
     <>
-      <Navbar></Navbar>
-      <RecipePage></RecipePage>
-      <Footer></Footer>
+      <RouterProvider router={router}></RouterProvider>
     </>
   )
 }

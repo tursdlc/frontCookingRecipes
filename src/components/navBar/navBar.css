@@ -1,29 +1,65 @@
 .navbar{
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 10vh;
     background-image: linear-gradient(to right, #95B5AB 0%, #5D887B 50%,#95B5AB 98%);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
 }
 .pageLinks{
     margin-left: 20px;
     display: flex;
-    gap: 28px;
+    gap:20px;
     font-family: "Roboto";
     font-size: 18px;
+    
 }
 .title{
     font-family: "yeseva one";
+    margin: auto;
 }
-.search{
-    margin-right: 20px;
+
+.loginIcon{
+    width:24px;
+    height:24px;
+    color:#403F3F;
+    margin-right: 40px;
 }
-.inputSearch{
-    font-family: "Roboto";
-    font-size: 16px;
-    border-radius: 18px;
-    padding:5px;
-    border-style: none;
-}
+@media (width < 375px){
+    .navbar{
+        display: flex;
+        justify-content: center;
+    }
+    .pageLinks{
+        width: 200px;
+        font-size: 12px;
+    }
+    .title{
+        font-size: 12px;
+    }
+    .search{
+        display: none;
+    }
+    }
+
+@media (375px <= width <= 768px){
+    .navbar{
+        display: flex;
+        justify-content: center;
+    }
+    .pageLinks{
+            width: 180px;
+            font-size: 12px;
+    }
+    .title{
+            font-size: 12px;
+    }
+    .search{
+        display: none;
+    }
+    
+        }
+    
