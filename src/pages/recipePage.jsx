@@ -22,7 +22,6 @@ const RecipePage = () => {
     }, []);
     
     return(
-        
             <div className='mainContainer'>
                 {data.map((item) => (
                     <RecipeList key={item.id} title={item.title} description={item.description} time={item.time}>
@@ -32,8 +31,6 @@ const RecipePage = () => {
                 ))}
                 
             </div>
-        
-        
     )
 }
 

@@ -1,21 +1,11 @@
-.titlePage{
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    font-family: "yeseva one";
-    color: #403F3F;
+
+@media (width <= 375px){
     
-}
-@media (width < 375px){
-    .titlePage{
-        
-        font-size: 12px;
-    }
     .main{
         font-size: 12px;
     }
     .recipeForm{
-        max-width: 300px;
+        max-width: 280px;
     }
     .titleInput{
         width:200px;
@@ -34,7 +24,7 @@
         font-size: 12px;
     }
     .recipeForm{
-        max-width: 370px;
+        max-width: 360px;
     }
     .formButton{
         font-size: 12px;

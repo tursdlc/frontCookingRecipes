@@ -1,10 +1,12 @@
 
 .main{
+    padding-top: 3em;
     display: flex;
     justify-content: center;
     margin-top: 40px;
-    margin-bottom:60px;
+    padding-bottom: 70px;
     font-family: "roboto";
+    background-image: url("src/assets/images/lemonsBackground.jpg");
 }
 
 .recipeForm{
@@ -12,9 +14,10 @@
     flex-direction: column;
     width: 640px;
     height: 580px;
-    background-color: #B8CEC7;
+    background-color:#B8CEC7;
     border-radius: 6px;
     padding:20px;
+    margin-top: 30px;
 }
 .recipeForm > label{
     padding-left:10px;
@@ -30,16 +33,19 @@
 .titleInput{
     width:280px;
     height: 70px;
+    
 }
 .descriptionText{
     margin: 10px;
     border-style: none;
     border-radius: 4px;
     font-family: "roboto";
+    
 }
 .timeInput{
     width:80px;
     height: 70px;
+    
 }
 .buttonBox{
     display: flex;
@@ -53,11 +59,12 @@
     height: 6vh;
     border-style: none;
     border-radius: 6px;
-    background-color: white;
     font-size: 16px;
     color: #403F3F;
+    background-color: white;
 }
 .formButton:hover{
     background-color: #5D887B;
     cursor: pointer;
+    font-weight: bold;
 }

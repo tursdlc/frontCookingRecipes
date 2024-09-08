@@ -1,41 +1,58 @@
-.navbar{
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+.navBar{
+    position: fixed;
+    top:0;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     width: 100%;
-    height: 10vh;
+    height: 3em;
     background-image: linear-gradient(to right, #95B5AB 0%, #5D887B 50%,#95B5AB 98%);
     color: white;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
     align-items: center;
-    justify-content: space-around;
-    
 }
+.navBarScroll{
+    background-image: none;
+    background-image: transparent;
+    color:#5D887B;
+}
+
 .pageLinks{
     margin-left: 20px;
     display: flex;
     gap:20px;
     font-family: "Roboto";
-    font-size: 18px;
-    
+    font-size: 16px;
 }
+.pageLinks a{
+    color:white;
+    text-decoration: none;
+}
+
 .title{
     font-family: "yeseva one";
     margin: auto;
 }
-
+.login{
+    display: flex;
+    justify-content: flex-end;
+}
 .loginIcon{
     width:24px;
     height:24px;
-    color:#403F3F;
     margin-right: 40px;
 }
 @media (width < 375px){
     .navbar{
-        display: flex;
-        justify-content: center;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+        align-items: center;
     }
     .pageLinks{
         width: 200px;
-        font-size: 12px;
+    }
+    .linkNav{
+        font-size: 10px;
     }
     .title{
         font-size: 12px;
@@ -47,15 +64,16 @@
 
 @media (375px <= width <= 768px){
     .navbar{
-        display: flex;
-        justify-content: center;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+        align-items: center;
     }
     .pageLinks{
-            width: 180px;
-            font-size: 12px;
+        width: 180px;
     }
+    
     .title{
-            font-size: 12px;
+        font-size: 12px;
     }
     .search{
         display: none;
