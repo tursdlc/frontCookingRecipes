@@ -1,13 +1,15 @@
 import { useState } from 'react'
 import { useEffect } from 'react';
 import axios from 'axios';
-const url = "http://127.0.0.1:8000/recipes-create/"
+
+export const url = "http://127.0.0.1:8000/recipes-recipes/"
 import RecipeList from '../components/recipesList/recipesList';
 import '../components/recipesList/recipesList.css'
 
-const RecipePage = () => {
-    const [data, setData] = useState([]);
 
+const RecipesPage = () => {
+    const [data, setData] = useState([]);
+    console.log(data)
     useEffect( () => {
         const retrieveData = async () => {
             try{
@@ -24,7 +26,7 @@ const RecipePage = () => {
     return(
             <div className='mainContainer'>
                 {data.map((item) => (
-                    <RecipeList key={item.id} title={item.title} description={item.description} time={item.time}>
+                    <RecipeList key={item.id} id={item.id} title={item.title} description={item.description} time={item.time}>
 
                     </RecipeList>
 
@@ -34,4 +36,4 @@ const RecipePage = () => {
     )
 }
 
-export default RecipePage;
+export default RecipesPage;

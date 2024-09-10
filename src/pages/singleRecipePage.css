@@ -1,0 +1,71 @@
+
+.mainContainerSingle{
+    background-image: url(../assets/images/berries.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 3em;
+    height:140vh;
+}
+.textBox{
+    margin-top: 100px;
+    padding: 40px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    background-color: #95B5AB;
+    border-radius: 6px;
+    margin-left: 20px;
+    font-size: 20px;
+    font-family: "Roboto";
+    color:#403F3F;
+}
+.recipeTitle{
+    font-family: "Yeseva one";
+    font-weight: bold;
+}
+.recipeDescription{
+    margin-top:60px;
+    margin-bottom: 80px;
+}
+.descriptionTitle{
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.timeDescription{
+    font-weight: bold;
+}
+.iconsDeleteUpdate{
+    display: flex;
+    justify-content: flex-end;
+    gap:10px;
+    margin-right: 10px;
+}
+
+@media (width <= 375px){
+    .textBox{
+        max-width: 240px;
+        font-size: 14px;
+        height: 480px;
+    }
+    .recipeDescription{
+        margin-top: 40px;
+        font-size: 12px;
+    }
+    
+    }
+@media (375px <= width <= 768px){
+ 
+    .textBox{
+        max-width: 300px;
+        font-size: 14px;
+        height: 480px;
+    }
+    .recipeDescription{
+        margin-top: 40px;
+        font-size: 12px;
+    }
+    
+    }
+    

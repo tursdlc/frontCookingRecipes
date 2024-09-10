@@ -13,8 +13,9 @@
 }
 .navBarScroll{
     background-image: none;
-    background-image: transparent;
-    color:#5D887B;
+    background-color:transparent;
+    
+    color:white;
 }
 
 .pageLinks{
@@ -22,7 +23,7 @@
     display: flex;
     gap:20px;
     font-family: "Roboto";
-    font-size: 16px;
+    font-size: 18px;
 }
 .pageLinks a{
     color:white;

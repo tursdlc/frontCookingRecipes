@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import { useState } from "react";
-
+import { FaRegCircleUser } from "react-icons/fa6";
 
 export default function Navbar(){
     //change nav when scrolling
@@ -23,10 +23,11 @@ export default function Navbar(){
                 <NavLink to={'/recipes'}>Recipes</NavLink>
             </div>
             <div className="title">
-                <h1>Savor Street</h1>
+                <NavLink to={'/'} style= {{textDecoration: "none", color:"white"}} ><h1>Savor Street</h1></NavLink>
+                
             </div>
             <div className="login">
-                <img className="loginIcon" src="src/assets/images/user-login.svg" alt="log in icon"/>
+                <FaRegCircleUser style = {{marginRight: "30px", width:"24px", height:"24px"}} />
             </div>
         </nav>       
         </>
