@@ -5,7 +5,7 @@
 
 ### 1. Descripción del proyecto
 
-Una aplicación web full-stack que permite a los usuarios agregar, editar, ver y eliminar recetas. Este proyecto está construido utilizando **React** para el frontend y **Django** para el backend, con solicitudes API que conectan ambos.
+Una aplicación web full-stack que permite a los usuarios agregar, editar, ver y eliminar recetas. Este proyecto está construido utilizando **React** para el frontend y **Django** para el backend (https://github.com/tursdlc/cookingproject), con solicitudes API que conectan ambos.
 
 ### 2. Funcionalidades
 
