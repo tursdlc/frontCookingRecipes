@@ -6,7 +6,7 @@ import { url } from './recipesPage';
 import './singleRecipePage.css'
 import { MdDeleteOutline } from "react-icons/md";
 import { MdOutlineEdit } from "react-icons/md";
-
+import { NavLink } from 'react-router-dom';
 
 const SingleRecipePage = () => {
     let { id } = useParams();
@@ -54,9 +54,9 @@ const SingleRecipePage = () => {
                     <div className='recipeDescription'><p className='descriptionTitle'>Description:</p> {description}</div>
                     <div className='timeDescription'>Time: {time}</div>
                     <div className="iconsDeleteUpdate">
-                    <MdDeleteOutline onClick={() => deletePost(1)}></MdDeleteOutline>
+                    <MdDeleteOutline style={{cursor: "pointer"}} onClick={() => deletePost(1)}></MdDeleteOutline>
                     {message && <p>{message}</p>}
-                    <MdOutlineEdit />
+                    <NavLink to= {`/edit/${id}`}><MdOutlineEdit></MdOutlineEdit></NavLink>
                     </div>
                 </div>
         </div>    

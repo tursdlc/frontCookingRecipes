@@ -33,8 +33,6 @@ export default function RecipeList({id, title, description, time}){
                         {description.length > 100 &&  (
                             <div className='buttonBox'><button className='readButton' onClick={toggleReadMore}>{isExpanded ? 'Read Less' : 'Read More'}  </button></div>
                         )}
-                        
-                        
                     </div>
                     </>
     )

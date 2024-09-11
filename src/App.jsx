@@ -5,7 +5,7 @@ import Home from './pages/home'
 import SingleRecipePage from './pages/singleRecipePage'
 import RecipesPage from './pages/recipesPage'
 import AddRecipe from './pages/addRecipe'
-import EditRecipe from './pages/editRecipe'
+import { EditRecipe } from './pages/editRecipe';
 
 function App() {
   const router = createBrowserRouter([
@@ -14,23 +14,23 @@ function App() {
       children:[
         {
           path:'/',
-          element: <Home></Home>
+          element: <Home/>
         },
         {
           path:'/addrecipe',
-          element: <AddRecipe></AddRecipe>
+          element: <AddRecipe/>
         },
         {
           path:'/recipes',
-          element: <RecipesPage></RecipesPage>
+          element: <RecipesPage/>
         },
         {
           path:'/recipes/:id',
           element: <SingleRecipePage />
         },
         {
-          path:'/edit-recipe',
-          element: <EditRecipe></EditRecipe>
+          path:'/edit/:id',
+          element: <EditRecipe />
         }
         
       ]

@@ -1,18 +1,23 @@
 import { useState } from "react";
 import axios from 'axios';
 const url = "http://127.0.0.1:8000/recipes-recipes/"
+import { useParams, useNavigate } from "react-router-dom";
 
 
 
 export default function Form(){
+    const { id } = useParams();
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
     const [time, setTime] = useState('');
+    const navigate = useNavigate();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
             const response = await axios.post(url, {title:title, description:description, time:time});
+            alert('Recipe updated sucessfuly');
+            navigate(`/recipes`);
             console.log(response.data)
         } catch (error){
             console.log(error.response);

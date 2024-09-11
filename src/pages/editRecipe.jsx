@@ -1,38 +1,94 @@
-import { useState } from 'react'
-import { useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useState, useEffect } from 'react'
+import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { url } from './recipesPage';
 
 
-const EditRecipe = () => {
-    return(
-        <h1>Hola</h1>
-    )
-}
-/*const EditRecipe = () => {
+export const EditRecipe = () => {
     let { id } = useParams();
+    const navigate = useNavigate();
+    const [recipe, setRecipe] = useState({ title: "", description: "", time: ""});
 
-    const [data, setData] = useSate({ id, title: "", description: "", time:0});
 
     useEffect( () => {
-        const retrieveData = async () => {
+        const fetchRecipe = async () => {
             try{
                 const response = await axios.get(`${url}${id}/`);
-                setData(response.data);
+                setRecipe(response.data);
             }catch(error){
                 console.log(error.response)
             }
         };
-        retrieveData();
+        fetchRecipe();
         
-    }, []);
+    }, [id, url]);
+    
+    const handleChange = (e) => {
+        setRecipe ({
+            ...recipe,
+            [e.target.name]: e.target.value
+        })
+    };
 
     
-    const edit = async () => {
-        axios.put()
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        try{
+            await axios.put(`${url}${id}/`, recipe);
+            alert('Recipe updated sucessfuly');
+            navigate(`/recipes/${id}`);
+            } catch (error){
+                console.log(error.response); 
+            }
+        };
+
+    return(
+        <>
+        <div className="main">
+        <form className="recipeForm" onSubmit={handleSubmit} >
+            <label>
+                Title</label>
+                <input 
+                    className= "titleInput" 
+                    type="text" 
+                    name="title" 
+                    value={recipe.title} 
+                    onChange={handleChange}
+                    >
+
+                </input>
+            
+            <label>
+                Description</label>
+                <textarea 
+                className="descriptionText" 
+                rows="30" 
+                cols="100" 
+                name="description"
+                value={recipe.description} 
+                onChange={handleChange}
+                ></textarea>
+            
+            <label>
+                Total time in seconds</label>
+                <input 
+                className= "timeInput" 
+                type="number" 
+                name="time" 
+                placeholder="sec"
+                value={recipe.time} 
+                onChange={handleChange}
+                >
+
+                </input>
+            
+            <div className="buttonBox"><button className="formButton" type="submit">Save changes</button></div>
+            
+        </form>
+        </div>
+        </>
+    )
     }
 
-}*/
 
-export EditRecipe
+
