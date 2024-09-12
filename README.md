@@ -33,7 +33,7 @@ Una aplicación web full-stack que permite a los usuarios agregar, editar, ver y
 
 1. Clona el repositorio del frontend:
    ```bash
-   git clone https://github.com/tuusuario/tu-repo-frontend.git
+   [git clone https://github.com/tuusuario/tu-repo-frontend.git](https://github.com/tursdlc/frontCookingRecipes.git)
    cd tu-repo-frontend
 
 2. Instala las dependencias:
